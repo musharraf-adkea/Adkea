@@ -1,0 +1,35 @@
+.lead-popup{box-sizing:border-box;width:min(560px,calc(100% - 32px));max-height:calc(100dvh - 32px);margin:auto;padding:0;border:1px solid #343234;border-radius:18px;background:#fff;color:#151515;overflow:auto;box-shadow:0 28px 100px #0008}
+.lead-popup::backdrop{background:rgba(0,0,0,.64);backdrop-filter:blur(8px)}
+.lead-popup[open]{animation:lead-popup-in .24s ease-out}
+.lead-popup-open{overflow:hidden}
+.lead-popup-header{position:relative;padding:29px 32px 25px;background:#151515;color:#fff;overflow:hidden}
+.lead-popup-header:before{content:'';position:absolute;width:180px;height:180px;right:-110px;bottom:-90px;border:1px solid #ff854c55;border-radius:50%;box-shadow:0 0 0 28px #ff854c08,0 0 0 58px #ff854c06;pointer-events:none}
+.lead-popup-close{position:absolute;right:17px;top:15px;display:grid;place-items:center;width:32px;height:32px;padding:0;border:1px solid #ffffff44;border-radius:50%;background:transparent;color:#fff;font:24px/1 sans-serif;cursor:pointer}
+.lead-popup-close:hover{background:#ffffff16;border-color:#ff854c}
+.lead-popup-eyebrow{display:block;color:#ff854c;font-size:11px;font-weight:700;letter-spacing:.12em;margin-bottom:14px}
+.lead-popup h2{margin:0;font-family:'Space Grotesk',Manrope,sans-serif;font-size:clamp(28px,3vw,36px);font-weight:700;line-height:1.12;letter-spacing:-.04em}
+.lead-popup h2 span{color:#baa0f3}
+.lead-popup-header p{margin:12px 0 0;color:#ccc;font-size:14px;line-height:1.5}
+.lead-popup-form{margin:0;padding:25px 32px 26px}
+.lead-popup-fields{display:grid;grid-template-columns:1fr 1fr;gap:17px 18px}
+.lead-popup-fields label{display:grid;gap:8px;min-width:0;color:#242424;font-size:13px;font-weight:700;line-height:1.3;letter-spacing:0;text-transform:none}
+.lead-popup .lead-popup-fields input{box-sizing:border-box;display:block;width:100%;min-width:0;height:46px;margin:0;padding:12px 13px;border:1px solid #dedde0;border-radius:7px;background:#f9f8fa;color:#171717;font:400 14px/1.4 Manrope,sans-serif;outline:none}
+.lead-popup .lead-popup-fields input::placeholder{color:#767278;opacity:1}
+.lead-popup .lead-popup-fields input:focus{border-color:#8f66ce;box-shadow:0 0 0 3px #a17ad91a;background:#fff}
+.lead-popup-consent{display:flex;align-items:flex-start;gap:10px;margin:22px 0;color:#565158;font-size:12px;font-weight:400;line-height:1.6;text-transform:none;letter-spacing:0;cursor:pointer}
+.lead-popup-consent input{flex:0 0 17px;width:17px;height:17px;margin:2px 0 0;accent-color:#865dc0;cursor:pointer}
+.lead-popup-consent a{color:#28232e;text-decoration:underline;text-underline-offset:3px}
+.lead-popup-send{display:flex;align-items:center;justify-content:space-between;width:100%;height:48px;padding:0 17px;border:0;border-radius:7px;background:#ff854c;color:#151515;font:700 14px/1 Manrope,sans-serif;cursor:pointer;transition:background .15s}
+.lead-popup-send span{font-size:25px;font-weight:400}
+.lead-popup-send:hover{background:#ff9b6c}
+.lead-popup-send:disabled{opacity:.6;cursor:wait}
+.lead-popup button:focus-visible,.lead-popup a:focus-visible{outline:3px solid #a98add;outline-offset:3px}
+.lead-popup-status{margin:12px 0 0;font-size:12px;line-height:1.5;color:#59515e}
+.lead-popup-status:empty{display:none}
+.lead-popup-honey{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.lead-popup-flight{width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;color:var(--paper,#f0f0eb)}
+.lead-popup-flight::backdrop{background:#080808}
+@keyframes lead-popup-in{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:480px){.lead-popup{width:calc(100% - 24px);max-height:calc(100dvh - 24px);border-radius:14px}.lead-popup-header{padding:24px 23px 20px}.lead-popup-eyebrow{margin-bottom:11px}.lead-popup h2{font-size:29px}.lead-popup-header p{font-size:13px;max-width:245px}.lead-popup-form{padding:20px 23px 23px}.lead-popup-fields{grid-template-columns:1fr;gap:13px}.lead-popup-fields label{gap:6px}.lead-popup .lead-popup-fields input{height:43px;font-size:16px;padding:10px 12px}.lead-popup-consent{margin:18px 0}.lead-popup-close{right:12px;top:12px}}
+@media(prefers-reduced-motion:reduce){.lead-popup[open]{animation:none}.lead-popup-send{transition:none}}
+.motion-paused .lead-popup[open]{animation:none}

@@ -1,0 +1,33 @@
+.review-section{background:#f3f2ef;color:#171717;padding-top:86px;padding-bottom:105px;overflow:hidden}
+.review-heading{align-items:center;margin-bottom:48px}.review-heading h2{font-size:clamp(44px,5.7vw,82px);letter-spacing:-.06em}.review-heading p{color:#68645f;max-width:360px;font-size:11px}
+.review-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 25px;align-items:start}
+.review-card{--review-accent:#ec6a38;--review-angle:-1.2deg;position:relative;display:flex;flex-direction:column;min-height:310px;padding:26px 25px 24px;border:1px solid #393632;border-left:4px solid var(--review-accent);border-radius:12px;background:#fff;box-shadow:4px 5px 0 #282522,0 14px 28px #25211b0a;transform:rotate(var(--review-angle));transition:transform .25s ease,box-shadow .25s ease;isolation:isolate}
+.review-card:nth-child(2){--review-accent:#7563d1;--review-angle:1deg;margin-top:14px}.review-card:nth-child(3){--review-accent:#ed8b24;--review-angle:-1.3deg;margin-top:2px}.review-card:nth-child(4){--review-accent:#9265cb;--review-angle:1deg}.review-card:nth-child(5){--review-accent:#378778;--review-angle:-.9deg;margin-top:12px}.review-card:nth-child(6){--review-accent:#537ab4;--review-angle:.8deg}
+.review-card:hover,.review-card:focus-within{transform:translateY(-5px) rotate(0);box-shadow:4px 8px 0 #282522,0 18px 35px #25211b12;z-index:1}
+.review-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.review-card .review-label{font:600 10px/1.4 Manrope,sans-serif;letter-spacing:.02em;text-transform:none;color:var(--review-accent)}.review-sample{font-size:8px;letter-spacing:.06em;text-transform:uppercase;color:#827c75;flex-shrink:0}
+.review-card .review-stars{display:flex;gap:10px;align-items:center;margin:19px 0 13px;color:var(--review-accent);font-size:15px;letter-spacing:.06em}.review-stars strong{color:#3a3631;font:600 11px/1 Manrope,sans-serif;letter-spacing:0}
+.review-card blockquote{font-size:clamp(14px,1.08vw,17px);line-height:1.7;color:#34312c;margin:0 0 25px;flex:1}
+.review-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:17px;border-top:1px solid #ebe8e3}.review-person{border:0;padding:0;gap:10px;min-width:0}.review-avatar{width:39px;height:39px;flex-shrink:0;background:var(--review-accent);color:#fff;font:600 13px/1 Space,sans-serif}.review-person strong{font-size:12px;color:#24211d;display:block;line-height:1.4}.review-person small{color:#7d7770;font-size:9px;line-height:1.5;margin-top:3px}
+.review-like{border:1px solid #dedad4;border-radius:30px;background:#fff;color:#82796f;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:8px 10px;min-height:34px;flex-shrink:0;font-size:10px;line-height:1;transition:color .18s,border-color .18s,background .18s}.review-like svg{width:14px;height:14px;stroke:currentColor;stroke-width:1.6;fill:none;transition:transform .2s,fill .2s}.review-like:hover{color:var(--review-accent);border-color:var(--review-accent)}.review-like[aria-pressed="true"]{color:var(--review-accent);border-color:var(--review-accent);background:#faf8f5}.review-like[aria-pressed="true"] svg{fill:currentColor;animation:review-heart-pop .32s ease}.review-like:focus-visible{outline:2px solid #29241e;outline-offset:3px}
+@keyframes review-heart-pop{0%,100%{transform:scale(1)}45%{transform:scale(1.3)}}
+@media(max-width:1100px){.review-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:27px 22px}.review-card{padding:24px;min-height:290px}.review-card blockquote{font-size:15px}.review-card:nth-child(2n){margin-top:12px}.review-card:nth-child(2n+1){margin-top:0}}
+@media(max-width:760px){.review-section{padding-top:58px;padding-bottom:70px}.review-heading{margin-bottom:32px}.review-heading p{margin-top:17px;font-size:10px;max-width:320px}.review-grid{grid-template-columns:1fr;gap:26px;padding:0 3px}.review-card{min-height:0;padding:24px 21px}.review-card:nth-child(n){margin-top:0;--review-angle:-.7deg}.review-card:nth-child(2n){--review-angle:.7deg}.review-card blockquote{font-size:15px}.review-card .review-label{font-size:10px}.review-person strong{font-size:12px}.review-like{min-height:38px;padding:9px 11px}}
+@media(prefers-reduced-motion:reduce){.review-card,.review-like,.review-like svg{transition:none!important;animation:none!important}.review-card:hover,.review-card:focus-within{transform:rotate(var(--review-angle))}}
+.motion-paused .review-like svg{animation:none!important}.motion-paused .review-card{transition:none}
+.review-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px 18px;align-items:stretch}
+.review-card{min-height:0;padding:20px 17px}
+.review-card:nth-child(n){margin-top:0;--review-angle:-.7deg}
+.review-card:nth-child(2n){--review-angle:.7deg}
+.review-card:nth-child(7){--review-accent:#ec6a38}.review-card:nth-child(8){--review-accent:#7563d1}.review-card:nth-child(9){--review-accent:#378778}.review-card:nth-child(10){--review-accent:#ed8b24}
+.review-card-top{display:block;margin-bottom:14px;min-height:54px}
+.review-role{display:block;color:#77716a;font-size:11px;line-height:1.4;margin-bottom:5px}
+.review-company{font-size:18px;line-height:1.25;letter-spacing:-.03em;color:var(--review-accent);margin:0;font-weight:750;min-height:0}
+.review-card blockquote{font-size:14px;line-height:1.6;margin-bottom:16px}
+.review-card-bottom{padding-top:12px;justify-content:space-between;gap:10px}.review-like{margin-left:auto}
+.review-company-logo{position:relative;display:flex;align-items:center;justify-content:flex-start;flex:0 1 96px;width:96px;height:34px;min-width:0;overflow:hidden;background:#fff}
+.review-company-logo img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.review-company-logo--innovega img,.review-company-logo--zoki img{position:absolute;left:50%;top:50%;max-width:none;max-height:none;object-fit:contain}
+.review-company-logo--innovega img{width:115%;height:auto;aspect-ratio:1;transform:translate(-50%,-53%)}
+.review-company-logo--zoki img{width:133.333%;height:auto;aspect-ratio:1;transform:translate(-50%,-50%)}
+@media(max-width:1100px){.review-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.review-card blockquote{font-size:15px}}
+@media(max-width:760px){.review-grid{grid-template-columns:1fr;gap:20px}.review-card{padding:20px}.review-card-top{min-height:0;margin-bottom:12px}.review-company{font-size:21px}.review-role{font-size:12px}.review-card blockquote{font-size:15px}}

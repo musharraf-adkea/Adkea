@@ -1,0 +1,58 @@
+/* A consistent section rhythm across the agency's pages. */
+.section{padding-top:72px;padding-bottom:72px}
+.section-heading,.work-heading,.review-heading{margin-bottom:32px}
+.intro{padding-top:64px;padding-bottom:56px}
+.capabilities{padding-top:24px;padding-bottom:64px}
+.ideas{padding-top:64px;padding-bottom:64px}
+.work-section{padding-top:64px;padding-bottom:64px}
+.review-section{padding-top:64px;padding-bottom:54px}
+.studio{padding-top:64px;padding-bottom:62px}
+.studio-right{padding-top:32px}
+.studio-left{width:fit-content;max-width:100%}
+.studio-art{width:clamp(220px,21vw,300px);height:auto;aspect-ratio:1;margin:18px auto 0}
+.studio-art .orbit{inset:12%;border-radius:50%}
+.studio-art>span{top:50%;left:50%;transform:translate(-50%,-50%);line-height:1}
+.office-pair{padding-bottom:64px}
+.process-grid article{padding-top:18px}
+.process-grid article::before{font-size:clamp(88px,7.2vw,110px);margin:6px 0 12px}
+.process-grid h3{margin:0 0 10px}
+.about-hero{min-height:0;padding-top:64px;padding-bottom:64px}
+.about-story,.about-principles,.about-markets{padding-top:64px;padding-bottom:64px}
+.life-at-adkea{padding-top:48px;padding-bottom:64px}
+.about-cta{padding-top:56px;padding-bottom:56px}
+.contact-hero{padding-top:60px;padding-bottom:60px}
+.contact-page-form{padding-top:72px;padding-bottom:72px}
+.contact-close{padding-top:38px;padding-bottom:38px}
+.service-row{padding-top:56px;padding-bottom:56px}
+.services-title{padding-top:32px;padding-bottom:36px}
+.alternating-services{padding-top:0;padding-bottom:44px}
+.services-closing{padding-top:54px;padding-bottom:54px}
+.industry-hero{padding-top:52px;padding-bottom:42px}
+.industry-sectors{padding-top:0;padding-bottom:40px}
+.industry-close{padding-top:52px;padding-bottom:52px}
+.industry-row{padding-top:48px;padding-bottom:48px}
+.hub-hero,.hub-paths{padding-top:60px;padding-bottom:60px}
+.hub-onboarding{padding-top:56px;padding-bottom:64px}
+.hub-faq{padding-top:64px;padding-bottom:64px}
+.resource-hero{padding-top:34px;padding-bottom:45px}
+.resource-content,.sitemap-content,.policy-layout{padding-top:38px;padding-bottom:56px}
+.resource-cta{padding-top:52px;padding-bottom:54px}
+@media(max-width:760px){
+ .section{padding-top:48px;padding-bottom:48px}
+ .section-heading,.work-heading,.review-heading{margin-bottom:28px}
+ .intro{padding-top:48px;padding-bottom:40px}
+ .capabilities{padding-top:12px;padding-bottom:48px}
+ .ideas,.work-section,.review-section{padding-top:48px;padding-bottom:48px}
+ .studio{padding-top:46px;padding-bottom:46px}.studio-right{padding-top:0}.studio-art{width:240px;margin-top:16px}
+ .office-pair{padding-bottom:45px}
+ .process-grid article::before{font-size:80px;margin:4px 0 10px}
+ .about-hero{padding-top:45px;padding-bottom:42px}
+ .about-story,.life-at-adkea,.about-principles,.about-markets{padding-top:42px;padding-bottom:45px}
+ .about-cta{padding-top:42px;padding-bottom:42px}
+ .contact-hero{padding-top:42px;padding-bottom:45px}.contact-page-form{padding-top:48px;padding-bottom:48px}.contact-close{padding-top:32px;padding-bottom:34px}
+ .service-row{padding-top:36px;padding-bottom:36px}.industry-row{padding-top:36px;padding-bottom:36px}
+ .services-title{padding-top:28px;padding-bottom:28px}.alternating-services{padding-top:0;padding-bottom:30px}.services-closing{padding-top:42px;padding-bottom:42px}
+ .industry-hero{padding-top:40px;padding-bottom:36px}.industry-sectors{padding-top:0;padding-bottom:28px}.industry-close{padding-top:42px;padding-bottom:42px}
+ .hub-hero,.hub-paths{padding-top:42px;padding-bottom:45px}.hub-onboarding{padding-top:35px;padding-bottom:48px}.hub-faq{padding-top:45px;padding-bottom:45px}
+ .resource-hero{padding-top:26px;padding-bottom:34px}.resource-content,.sitemap-content,.policy-layout{padding-top:28px;padding-bottom:42px}.resource-cta{padding-top:42px;padding-bottom:44px}
+}
