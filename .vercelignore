@@ -1,0 +1,7 @@
+*
+!dist
+!dist/**
+!scripts
+!scripts/build-vercel.mjs
+!vercel.json
+dist/**/.DS_Store
