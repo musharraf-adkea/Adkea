@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adkea-creative-studio.musharraf772218.chatgpt.site/sitemap.xml
+Sitemap: https://www.adkea.co/sitemap.xml
